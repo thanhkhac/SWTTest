@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div>
+            <h1>Home Page</h1>
+
+            <a href="cookieLogin">Login</a> <br />
+
+            <form action="DispatchController">
+                <input type="submit" name="btAction" value="ViewEmployee">
+            </form> <br />
+
+            <a href="RecoveryPassword.jsp">recovery page</a> <br />
+
+            <a href="ViewAllEmployeeServlet">ViewAllEmplyeeServlet</a> <br>
+
+            <a href="RecoveryPassword.jsp">recovery page</a> <br>
+
+            <a href="ForgotPassword.jsp">forgot pw</a> <br>
+            <a href="InsertEmployee.jsp">insert employee</a> <br>
+            
+            <a href="DepartmentServlet">View All Department</a>
+            <form action="DispatchController">
+                <select name="department">
+                    <option value="1">Phòng nhân sự</option>
+                    <option value="2">Phòng tiếp thị</option>
+                </select>
+                <input type="submit" name="btAction" value="viewListByDepartment">
+            </form>
+            
+            <a href="DepartmentServlet">View Department</a> <br>
+        </div>
+    </body>
+</html>
