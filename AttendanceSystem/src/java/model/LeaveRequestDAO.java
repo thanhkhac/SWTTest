@@ -21,7 +21,7 @@ public class LeaveRequestDAO extends DAOBase {
     static final DateTimeUtil DATE_UTIL = new DateTimeUtil();
 
     public ArrayList<LeaveRequestDTO> getLeaveRequest() {
-        ArrayList<LeaveRequestDTO> list = new ArrayList();
+        ArrayList<LeaveRequestDTO> list = new ArrayList<>();
         PreparedStatement stm = null;
         ResultSet rs = null;
         if (connection != null) {
@@ -79,6 +79,7 @@ public class LeaveRequestDAO extends DAOBase {
 
     public static void main(String[] args) {
         LeaveRequestDAO dao = new LeaveRequestDAO();
+  /*      
         ArrayList<LeaveRequestDTO> list = dao.getLeaveRequest();
         System.out.println("List size: " + list.size() + "\n");
 
@@ -95,5 +96,6 @@ public class LeaveRequestDAO extends DAOBase {
             System.out.println(lr.getHrID());
             System.out.println("\n");
         }
+*/
     }
 }
