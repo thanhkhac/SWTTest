@@ -55,18 +55,13 @@
             <file>file:/C:/Users/nguye/OneDrive/Máy%20tính/SWP_PROJ/attendance-system/AttendanceSystem/web/ScheduleWorkEmployees.jsp</file>
             <file>file:/C:/Users/nguye/OneDrive/Máy%20tính/SWP_PROJ/attendance-system/AttendanceSystem/web/ProcessLeaveRequestForManager.jsp</file>
         </group>
-
-
         <group name="SWP391"/>
         <group name="java_web">
-            <file>file:/C:/Users/Admin/Desktop/master/attendance-system/AttendanceSystem/src/java/model/EmployeeDAO.java</file>
-            <file>file:/C:/Users/Admin/Desktop/master/attendance-system/AttendanceSystem/src/java/model/DepartmentDAO.java</file>
-            <file>file:/C:/Users/Admin/Desktop/master/attendance-system/AttendanceSystem/web/viewEmployeesByManager.jsp</file>
-            <file>file:/C:/Users/Admin/Desktop/master/attendance-system/AttendanceSystem/src/java/control/overtime/ListEmployeeOvertimeAjax.java</file>
-            <file>file:/C:/Users/Admin/Desktop/master/attendance-system/AttendanceSystem/src/java/model/OvertimeDAO.java</file>
-            <file>file:/C:/Users/Admin/Desktop/master/attendance-system/AttendanceSystem/src/java/control/employee/SearchEmployeeAjax.java</file>
+            <file>file:/C:/Users/Admin/Desktop/New%20folder/SWTTest/AttendanceSystem/src/java/control/overtime/ListEmployeeOvertimeAjax.java</file>
+            <file>file:/C:/Users/Admin/Desktop/New%20folder/SWTTest/AttendanceSystem/src/java/model/OvertimeDAO.java</file>
+            <file>file:/C:/Users/Admin/Desktop/New%20folder/SWTTest/AttendanceSystem/src/java/control/authentication/CheckLoginServlet.java</file>
+            <file>file:/C:/Users/Admin/Desktop/New%20folder/SWTTest/AttendanceSystem/src/java/control/overtime/OverTimeByDay.java</file>
+            <file>file:/C:/Users/Admin/Desktop/New%20folder/SWTTest/AttendanceSystem/src/java/control/overtime/AddEmployeeOvertime.java</file>
         </group>
-
-
     </open-files>
 </project-private>
