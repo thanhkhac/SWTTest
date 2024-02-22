@@ -14,6 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 import model.DepartmentDAO;
 import model.DepartmentDTO;
 import model.EmployeeDAO;
@@ -117,13 +118,18 @@ public class DepartmentController extends HttpServlet {
         return departmentDAO.getListDepartment();
     }
 
+   private static final Logger LOGGER = Logger.getLogger(DepartmentDAO.class.getName());
+
     private List<DepartmentDTO> search(HttpServletRequest request, HttpServletResponse response) {
         String keyword = request.getParameter("keyword");
         DepartmentDAO departmentDAO = new DepartmentDAO();
         DepartmentDTO dto = new DepartmentDTO();
         dto.setName(keyword);
         List<DepartmentDTO> list = departmentDAO.searchByName(dto);
-        System.out.println(list.toString());
+        
+        // Thay thế System.out.println bằng logger
+        LOGGER.info(list.toString());
+
         return list;
     }
 }
