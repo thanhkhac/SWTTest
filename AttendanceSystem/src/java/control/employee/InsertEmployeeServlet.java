@@ -176,13 +176,10 @@ public class InsertEmployeeServlet extends HttpServlet {
         ////////////////////////////////////////////////////////////////////////////////////     
         Boolean gender_raw = null;
         // cast gender before insert
-        switch (gender) {
-            case "male":
-                gender_raw = true;
-                break;
-            case "female":
-                gender_raw = false;
-                break;
+        if(gender.equalsIgnoreCase("male")){
+            gender_raw = true;
+        }else if(gender.equalsIgnoreCase("female")){
+            gender_raw = false;
         }
 
         boolean activeAcc = false;
@@ -212,7 +209,7 @@ public class InsertEmployeeServlet extends HttpServlet {
                         msg = "Thời gian làm việc ít nhất 6 tháng";
                     } else {  // thời hạn làm việc >= 6 tháng
                         defaultPW = em.sendOTP("Default Password" , "default password", email);
-                        if (emDao.insertEmployee(firstName, middleName, lastName, gender_raw, birth_date, email, defaultPW, cccd, phonenumber, employee_type_id_raw, department_id_raw, role_id_raw, start_date, end_date, activeAcc) == true) {
+                        if (emDao.insertEmployee(firstName, middleName, lastName, gender_raw, birth_date, email, defaultPW, cccd, phonenumber, employee_type_id_raw, department_id_raw, role_id_raw, start_date, end_date, activeAcc)) {
                             msg = "Thêm nhân viên thành công";
                         } else {
                             msg = "Thêm nhân viên không thành công";
@@ -220,7 +217,7 @@ public class InsertEmployeeServlet extends HttpServlet {
                     }
                 } else {  // năm kêt thúc lớn hơn năm bắt đầu
                     defaultPW = em.sendOTP("Default Password" , "default password", email);
-                    if (emDao.insertEmployee(firstName, middleName, lastName, gender_raw, birth_date, email, defaultPW, cccd, phonenumber, employee_type_id_raw, department_id_raw, role_id_raw, start_date, end_date, activeAcc) == true) {
+                    if (emDao.insertEmployee(firstName, middleName, lastName, gender_raw, birth_date, email, defaultPW, cccd, phonenumber, employee_type_id_raw, department_id_raw, role_id_raw, start_date, end_date, activeAcc)) {
                         msg = "Thêm nhân viên thành công";
                     } else {
                         msg = "Thêm nhân viên không thành công";
