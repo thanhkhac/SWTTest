@@ -33,6 +33,7 @@ public class GetEmployeeInfoByHRServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        //
         String txt_ID = request.getParameter("EmployeeID");
         EmployeeDAO EmDao = new EmployeeDAO();
         DepartmentDAO DeDao = new DepartmentDAO();
