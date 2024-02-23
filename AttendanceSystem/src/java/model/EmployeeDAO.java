@@ -954,4 +954,16 @@ public class EmployeeDAO extends DBContext {
         }
     }
 
+    public int countEmployeeOvertime(String date, String string, String string0, String string1, String string2, String string3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public ArrayList<EmployeeDTO> getListAddEmployeeOvertime(String date) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public ArrayList<EmployeeDTO> getListAddEmployeeOvertimeAjax(int Page, String Date, String phongBan, String empID, String firstName, String lastName, String Middname) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }
