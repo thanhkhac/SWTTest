@@ -16,15 +16,7 @@ public class DAOBase extends DBContext {
         con = connection;
     }
 
-    public void finalize() {
-        try {
-            if (con != null) {
-                con.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+
 
     public void closeResource() {
         if (rs != null) {
